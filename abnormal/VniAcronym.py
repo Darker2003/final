@@ -2,7 +2,7 @@ import json
 
 class Acronym:
     def __init__(self):
-        file_path = 'DatasetVniAcronym\Acronym.json'
+        file_path = 'DatasetVniAcronym/Acronym.json'
         with open(file_path, 'r', encoding='utf-8') as json_file:
             self.my_dict = json.load(json_file)
     def Convert(self,value):

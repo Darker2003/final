@@ -37,9 +37,9 @@ def analyze_sentiment1(request):
         input_text = request.POST['text']
         tokenized_text = A.Solve_Acr(input_text)
 
-        label, cof = M.Predict(input_text)
+        label, cof = M.Predict(tokenized_text)
         with open("HisFeedBack/"+label+'.txt','a',encoding = 'utf8') as f:
-            f.write(input_text+'\n')
+            f.write(tokenized_text+'\n')
         # Update dictionary with input_text as key and label as value
         result_dict = {input_text: label}
 

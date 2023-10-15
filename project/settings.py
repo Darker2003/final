@@ -25,11 +25,11 @@ SECRET_KEY = 'django-insecure-9@k3atd^+do+s8(6h^$ijvum!(f3v7qyj)%)kp2(r0v_5+iht-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.0.196", "192.168.241.215", "192.168.0.198", "192.168.1.8"]
+ALLOWED_HOSTS = ["192.168.0.196","192.168.1.46", "192.168.241.215", "192.168.0.198", "192.168.1.8", "192.168.227.249"]
 
 
 # Application definition
-APP_NAME = ["sentiment_analysis"]
+APP_NAME = ["abnormal"]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["sentiment_analysis/tempalates"],
+        'DIRS': ["abnormal/tempalates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,9 +115,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'sentiment_analysis/tempalates/static/'
+STATIC_URL = 'abnormal/tempalates/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'sentiment_analysis/tempalates/static')
+    os.path.join(BASE_DIR, 'abnormal/tempalates/static')
 ]
 
 # Default primary key field type
